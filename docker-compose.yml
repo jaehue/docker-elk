@@ -12,7 +12,7 @@ logstash:
     - ./logstash/patterns/nginx:/opt/logstash/patterns/nginx
   ports:
     - "5044:5044"
-    - "5000:5000"
+    - "5010:5000"
   links:
     - elasticsearch
 kibana:
