@@ -5,7 +5,7 @@ elasticsearch:
     - "9200:9200"
     - "9300:9300"
 logstash:
-  image: logstash:latest
+  build: .
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - ./logstash/config:/etc/logstash/conf.d
